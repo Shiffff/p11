@@ -1,17 +1,17 @@
 import { BrowserRouter, Route, Routes } from "react-router-dom";
-import Layout from "./Pages/Layout";
-import Home from "./Pages/Home";
-import Error from "./Pages/Error";
+import Router from "./Utils/Router";
 
 function App() {
   return (
     <div className="App">
       <BrowserRouter>
         <Routes>
-          <Route path="/*" element={<Layout />}>
-            <Route index element={<Home/>}/>
-            <Route path="*" element={<Error />} />
-          </Route>
+          <Route
+             path="/*"
+              element={
+                <Router/>
+              }
+            />
         </Routes>
       </BrowserRouter>
     </div>

@@ -1,0 +1,9 @@
+.mainHeader{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color:  lightcoral;
+    .activLink{
+        border-bottom: 1px solid lightcoral;
+    }
+}
