@@ -1,9 +1,17 @@
-.mainFooter{
-    background-color: black;
-    height: 100px;
-    width: 100%;
-    color: white;
-    display: flex;
-    align-items: center;
-    flex-direction: column;
+.mainFooter {
+  background-color: black;
+  height: 140px;
+  width: 100%;
+  color: white;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  margin-top: 50px;
+  display: none;
+  img {
+    padding-top: 50px;
+  }
+  p {
+    margin-top: 20px;
+  }
 }

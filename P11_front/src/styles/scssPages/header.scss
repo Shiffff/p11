@@ -1,9 +1,20 @@
-.mainHeader{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    color:  lightcoral;
-    .activLink{
-        border-bottom: 1px solid lightcoral;
+.mainHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: lightcoral;
+  margin-top: 50px;
+  margin-left: 4%;
+  margin-right: 4%;
+  .activLink {
+    border-bottom: 1px solid lightcoral;
+  }
+  .mainHeaderR {
+    width: 150px;
+    font-weight: 500;
+    nav {
+      display: flex;
+      justify-content: space-between;
     }
+  }
 }
