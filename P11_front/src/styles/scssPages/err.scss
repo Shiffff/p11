@@ -1,0 +1,22 @@
+.errorPageContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: $primary;
+  h2 {
+    font-size: 250px;
+    margin-top: 8%;
+  }
+  .errorPageText1 {
+    font-size: 40px;
+  }
+  .errorPageText2 {
+    cursor: pointer;
+    margin-top: 12%;
+
+    &:hover {
+      border-bottom: 1px solid $primary;
+    }
+  }
+}

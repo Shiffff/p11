@@ -1,6 +1,6 @@
 .collapseTitle {
   display: flex;
-  background-color: lightcoral;
+  background-color: $primary;
   justify-content: space-between;
   height: 50px;
   color: white;
@@ -12,8 +12,13 @@
 }
 .collapseContainer {
   margin-top: 20px;
+  cursor: pointer;
   .collapseText {
     background-color: $gray;
-    color: lightcoral;
+    color: $primary;
+    padding: 10px;
+  }
+  .activeCollapse {
+    rotate: 180deg;
   }
 }

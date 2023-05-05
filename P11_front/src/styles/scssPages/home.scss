@@ -62,6 +62,7 @@
     width: 340px;
     height: 340px;
     border-radius: 15px;
+    object-fit: cover;
 
     @include md {
       width: 100%;

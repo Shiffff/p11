@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from "react";
+import { Link } from "react-router-dom";
 
 const HomeContent = () => {
   const [data, setData] = useState([]);
@@ -23,8 +24,10 @@ const HomeContent = () => {
           {data.map((appt, index) => {
             return (
               <div className="apptCard" key={index}>
-                <img src={appt.cover} alt={appt.title}></img>
-                <p>{appt.title}</p>
+                <Link to={`/logement/${appt.id}`}>
+                  <img src={appt.cover} alt={appt.title}></img>
+                  <p>{appt.title}</p>
+                </Link>
               </div>
             );
           })}

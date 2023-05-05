@@ -2,12 +2,12 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  color: lightcoral;
+  color: $primary;
   margin-top: 50px;
   margin-left: 4%;
   margin-right: 4%;
   .activLink {
-    border-bottom: 1px solid lightcoral;
+    border-bottom: 1px solid $primary;
   }
   .mainHeaderR {
     width: 150px;

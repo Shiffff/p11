@@ -10,7 +10,11 @@ const Collapse = ({ content }) => {
         className="collapseTitle"
       >
         <p>{content.title} </p>
-        <img src="./chevron.svg"></img>
+        <img
+          className={showCollapse ? "activeCollapse" : ""}
+          src="../chevron.svg"
+          alt="Icone du menu"
+        ></img>
       </div>
       {showCollapse && <p className="collapseText">{content.text}</p>}
     </div>
