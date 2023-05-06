@@ -16,7 +16,23 @@ const Collapse = ({ content }) => {
           alt="Icone du menu"
         ></img>
       </div>
-      {showCollapse && <p className="collapseText">{content.text}</p>}
+      {showCollapse && (
+        <div className="collapseContent">
+          {typeof content.text === "object" ? (
+            <>
+              {content.text.map((obj, index) => {
+                return (
+                  <p className="collapseText" key={index}>
+                    {obj}
+                  </p>
+                );
+              })}
+            </>
+          ) : (
+            <p className="collapseText">{content.text}</p>
+          )}{" "}
+        </div>
+      )}
     </div>
   );
 };

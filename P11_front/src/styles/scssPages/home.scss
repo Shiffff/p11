@@ -53,6 +53,11 @@
   height: 340px;
   border-radius: 15px;
   position: relative;
+  transition: transform 0.2s;
+  transform: scale(1);
+  &:hover {
+    transform: scale(1.02);
+  }
   cursor: pointer;
   @include md {
     width: 100%;

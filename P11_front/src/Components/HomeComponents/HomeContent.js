@@ -1,18 +1,16 @@
 import React, { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
+import caller from "../../Utils/caller";
 
 const HomeContent = () => {
   const [data, setData] = useState([]);
   const [isLoading, setIsLoading] = useState(true);
 
   useEffect(() => {
-    fetch(process.env.REACT_APP_API_URL)
-      .then((response) => response.json())
-      .then((data) => {
-        setData(data);
-        setIsLoading(false);
-      })
-      .catch((error) => console.error(error));
+    caller().then((data) => {
+      setData(data);
+      setIsLoading(false);
+    });
   }, []);
 
   return (

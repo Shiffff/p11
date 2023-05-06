@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 
 const LogementCaroussel = ({ pictures, title }) => {
   const [mainPic, setMainPic] = useState(pictures[0]);
@@ -21,6 +21,20 @@ const LogementCaroussel = ({ pictures, title }) => {
     setViewIndex(index);
     setMainPic(pictures[index - 1]);
   };
+
+  useEffect(() => {
+    const handleKeyPress = (event) => {
+      if (event.key === "ArrowLeft") {
+        prevPic();
+      } else if (event.key === "ArrowRight") {
+        nextPic();
+      }
+    };
+    document.addEventListener("keydown", handleKeyPress);
+    return () => {
+      document.removeEventListener("keydown", handleKeyPress);
+    };
+  }, [prevPic, nextPic]);
 
   return (
     <div className="logementCaroussel">

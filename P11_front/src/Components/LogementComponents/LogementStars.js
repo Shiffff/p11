@@ -12,8 +12,6 @@ const LogementStars = ({ rating }) => {
     stars.push(<Star color={colorEmpty} key={i} />);
   }
 
-  console.log(stars);
-
   return <div className="starContainer">{stars}</div>;
 };
 
