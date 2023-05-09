@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
 import caller from "../../Utils/caller";
+import "./homeContent.scss";
 
 const HomeContent = () => {
   const [data, setData] = useState([]);

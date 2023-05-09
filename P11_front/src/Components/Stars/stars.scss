@@ -1,0 +1,27 @@
+@import "../../styles/breakpoint.scss";
+
+.logementStarContainer {
+  display: flex;
+  justify-content: space-between;
+  @include md {
+    display: block;
+  }
+
+  .badgeContainer {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .starContainer {
+    display: flex;
+    gap: 20px;
+    @include md {
+      gap: 10px;
+    }
+    @include md {
+      svg {
+        width: 15px;
+        height: 15px;
+      }
+    }
+  }
+}

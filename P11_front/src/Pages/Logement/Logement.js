@@ -1,10 +1,10 @@
 import React, { useEffect, useState } from "react";
 import { useNavigate, useParams } from "react-router-dom";
-import LogementDescription from "../Components/LogementComponents/LogementDescription";
-import LogementCaroussel from "../Components/LogementComponents/LogementCaroussel";
-import caller from "../Utils/caller";
+import LogementDescription from "../../Components/LogementDescritption/LogementDescription";
+import LogementCaroussel from "../../Components/Carroussel/LogementCaroussel";
+import caller from "../../Utils/caller";
 
-const Appart = () => {
+const Logement = () => {
   const [data, setData] = useState([]);
   const [isLoading, setIsLoading] = useState(true);
   const { id } = useParams();
@@ -36,4 +36,4 @@ const Appart = () => {
   );
 };
 
-export default Appart;
+export default Logement;

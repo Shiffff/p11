@@ -1,3 +1,5 @@
+@import "../../styles/color.scss";
+@import "../../styles/breakpoint.scss";
 .logementDescriptionContainer {
   margin-left: 4%;
   margin-right: 4%;
@@ -16,59 +18,60 @@
     text-align: end;
     margin-right: 13px;
   }
+  @include md {
+    font-size: 18px;
+    font-weight: 400;
+    margin-bottom: 10px;
+  }
 }
 .logementHostContainer {
   display: flex;
   align-items: center;
+  @include md {
+    display: none;
+  }
   img {
     border-radius: 100%;
     width: 80px;
     height: 80px;
   }
 }
-.logementLocation {
-  font-size: 18px;
-  margin-top: -10px;
-}
-.logementStarContainer {
+.ratingContainer {
   display: flex;
   justify-content: space-between;
-  @include md {
-    flex-direction: row-reverse;
-  }
-
-  .badgeContainer {
-    display: flex;
-  }
-  .starContainer {
-    display: flex;
-    gap: 20px;
+  align-items: center;
+  .logementHostContainerMobile {
+    display: none;
     @include md {
-      gap: 10px;
-    }
-    @include md {
-      svg {
-        width: 15px;
-        height: 15px;
+      display: flex;
+      align-items: center;
+      img {
+        border-radius: 100%;
+        width: 80px;
+        height: 80px;
+      }
+      p {
+        text-align: end;
+        margin-right: 13px;
       }
     }
   }
 }
-.tag {
-  background-color: $primary;
-  color: white;
-  min-width: 115px;
-  height: 25px;
-  padding: 3px;
-  border-radius: 20px;
-  text-align: center;
-  padding: 3px;
-  font-size: 14px;
-}
+
 .badgeContainer {
   gap: 10px;
   margin-top: 30px;
 }
+
+.logementLocation {
+  font-size: 18px;
+  margin-top: -10px;
+  @include md {
+    font-size: 18px;
+    font-weight: 400;
+  }
+}
+
 .logementCollapseContainer {
   display: flex;
   gap: 100px;

@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from "react";
+import "./carroussel.scss";
 
 const LogementCaroussel = ({ pictures, title }) => {
   const [mainPic, setMainPic] = useState(pictures[0]);

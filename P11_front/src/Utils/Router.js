@@ -1,10 +1,10 @@
 import React from "react";
 import { Route, Routes } from "react-router-dom";
 import Layout from "./Layout";
-import Home from "../Pages/Home";
-import Error from "./Error";
-import About from "../Pages/About";
-import Appart from "../Pages/Appart";
+import Home from "../Pages/Home/Home";
+import Error from "./Error/Error";
+import About from "../Pages/About/About";
+import Logement from "../Pages/Logement/Logement";
 
 const Router = () => {
   return (
@@ -13,7 +13,7 @@ const Router = () => {
         <Route element={<Layout />}>
           <Route index element={<Home />} />
           <Route path="/about" element={<About />} />
-          <Route path="/logement/:id" element={<Appart />} />
+          <Route path="/logement/:id" element={<Logement />} />
 
           <Route path="*" element={<Error />} />
         </Route>

@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import "./collapse.scss";
 
 const Collapse = ({ content }) => {
   const [showCollapse, setShowCollapse] = useState(false);

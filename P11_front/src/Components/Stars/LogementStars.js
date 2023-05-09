@@ -1,5 +1,6 @@
 import React from "react";
 import Star from "./Star";
+import "./stars.scss";
 
 const LogementStars = ({ rating }) => {
   const colorFull = "#FF6060";

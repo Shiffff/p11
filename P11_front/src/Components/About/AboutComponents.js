@@ -1,5 +1,6 @@
 import React from "react";
-import Collapse from "../Collapse";
+import Collapse from "../Collapse/Collapse";
+import "./about.scss";
 
 const AboutComponents = () => {
   const collapseContent = [

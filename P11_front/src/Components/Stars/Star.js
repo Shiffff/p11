@@ -1,4 +1,5 @@
 import React from "react";
+import "./stars.scss";
 
 const Star = ({ color }) => {
   return (

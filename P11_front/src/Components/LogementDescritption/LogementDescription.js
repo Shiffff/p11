@@ -1,7 +1,8 @@
 import React from "react";
-import LogementBadge from "./LogementBadge";
-import Collapse from "../Collapse";
-import LogementStars from "./LogementStars";
+import LogementBadge from "../Badge/LogementBadge";
+import Collapse from "../Collapse/Collapse";
+import LogementStars from "../Stars/LogementStars";
+import "./logementDescription.scss";
 
 const LogementDescription = ({ data }) => {
   const name = data.host.name;
@@ -28,7 +29,17 @@ const LogementDescription = ({ data }) => {
             return <LogementBadge key={index} tag={tag} />;
           })}
         </div>
-        <LogementStars rating={data.rating} />
+        <div className="ratingContainer">
+          <LogementStars rating={data.rating} />
+          <div className="logementHostContainerMobile">
+            <p>
+              {firstName}
+              <br />
+              {lastName}
+            </p>
+            <img src={data.host.picture} alt={data.title}></img>
+          </div>{" "}
+        </div>
       </div>
 
       <div className="logementCollapseContainer">
