@@ -38,7 +38,7 @@ const LogementDescription = ({ data }) => {
               {lastName}
             </p>
             <img src={data.host.picture} alt={data.title}></img>
-          </div>{" "}
+          </div>
         </div>
       </div>
 

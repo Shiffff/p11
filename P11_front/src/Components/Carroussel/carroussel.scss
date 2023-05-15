@@ -43,5 +43,8 @@
     transform: translateX(-50%);
     color: white;
     font-weight: 600;
+    @include md {
+      display: none;
+    }
   }
 }
